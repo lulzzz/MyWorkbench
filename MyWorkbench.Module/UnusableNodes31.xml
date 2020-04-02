@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="Message_DetailView_View">
+      <Items Id="Items">
+        <PropertyEditor Id="To" PropertyName="To" View="Message_To_ListView" />
+      </Items>
+    </DetailView>
+    <DetailView Id="Email_DetailView_View">
+      <Items Id="Items">
+        <PropertyEditor Id="To" PropertyName="To" View="Email_To_ListView" />
+        <PropertyEditor Id="CC" PropertyName="CC" View="Email_CC_ListView" />
+        <PropertyEditor Id="BCC" PropertyName="BCC" View="Email_BCC_ListView" />
+      </Items>
+    </DetailView>
+    <DetailView Id="Email_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Email">
+              <LayoutItem Id="BCC" ViewItem="BCC" />
+              <LayoutItem Id="CC" ViewItem="CC" />
+              <LayoutItem Id="To" ViewItem="To" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="BCC" RelativeSize="0" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="BCC" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="CC" RelativeSize="0" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="CC" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="To" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="To" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Email_ToEmailAddresses_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="DisplayValue" SortOrder="Descending" />
+      </Columns>
+    </ListView>
+    <DetailView Id="Message_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs" RelativeSize="36.489607390300229" Removed="True">
+            <LayoutGroup Id="CommunicationLog" RelativeSize="0" Index="0" Caption="Logs" Direction="Horizontal">
+              <LayoutItem Id="CommunicationLog" RelativeSize="100" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="To" Direction="Horizontal" Removed="True">
+              <LayoutItem Id="To" Removed="True" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Message">
+              <LayoutItem Id="To" ViewItem="To" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="CreditNote_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Invoice_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Quote_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

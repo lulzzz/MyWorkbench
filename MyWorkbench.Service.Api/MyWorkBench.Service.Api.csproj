@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2306B551-4D7C-4506-888B-6E067641DF43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyWorkbench.Service.Api</RootNamespace>
+    <AssemblyName>MyWorkbench.Service.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiBase.cs" />
+    <Compile Include="Geocode.cs" />
+    <Compile Include="WebHooks.cs" />
+    <Compile Include="EmailToTicket.cs" />
+    <Compile Include="Recurring.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="TaskExceptionList.cs" />
+    <Compile Include="Emails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignyt.Framework.ExpressApp\Ignyt.Framework.ExpressApp.csproj">
+      <Project>{0df62b91-3857-4168-9f15-511793a21e72}</Project>
+      <Name>Ignyt.Framework.ExpressApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Framework.Mail\Ignyt.Framework.Mail.csproj">
+      <Project>{816d8d3a-ce6f-4361-a5b3-2314efb217f8}</Project>
+      <Name>Ignyt.Framework.Mail</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Webfunctions\Ignyt.Webfunctions.csproj">
+      <Project>{be1d28c3-865b-4746-be28-97d2cee2d1bc}</Project>
+      <Name>Ignyt.Webfunctions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.BusinessInterface\Ignyt.BusinessInterface.csproj">
+      <Project>{8e0e2a83-5e0c-491e-98cd-2db4b6e6863e}</Project>
+      <Name>Ignyt.BusinessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWorkbench.BusinessObjects\MyWorkbench.BusinessObjects.csproj">
+      <Project>{1324a411-390d-4bdc-a4ae-192451827c3d}</Project>
+      <Name>MyWorkbench.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWorkbench.BusinessReports\MyWorkbench.BusinessReports.csproj">
+      <Project>{a3c572ce-94d8-47a7-9b1c-e530f3eb7e84}</Project>
+      <Name>MyWorkbench.BusinessReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Framework.Api\Ignyt.Framework.Api.csproj">
+      <Project>{6d915e37-74a7-442f-82b4-fa8368850cc4}</Project>
+      <Name>Ignyt.Framework.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Framework\Ignyt.Framework.csproj">
+      <Project>{4f0e9945-b6c5-4762-a3f7-db49f01f9327}</Project>
+      <Name>Ignyt.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

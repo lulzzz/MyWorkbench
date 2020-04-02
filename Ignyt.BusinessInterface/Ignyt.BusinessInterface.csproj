@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E0E2A83-5E0C-491E-98CD-2DB4B6E6863E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ignyt.BusinessInterface</RootNamespace>
+    <AssemblyName>Ignyt.BusinessInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\CommonEnum.cs" />
+    <Compile Include="Attributes\CommonAttributes.cs" />
+    <Compile Include="CommonAttributes.cs" />
+    <Compile Include="CommonEnum.cs" />
+    <Compile Include="Communication\Enum\Communication.cs" />
+    <Compile Include="Communication\IEmail.cs" />
+    <Compile Include="Communication\IEmailAttachment.cs" />
+    <Compile Include="Kanban\IKanban.cs" />
+    <Compile Include="WorkFlow\Enum\WorkFlow.cs" />
+    <Compile Include="CommonInterfaces.cs" />
+    <Compile Include="IPlaceHoldersProvider.cs" />
+    <Compile Include="Lookups\IPhysicalAddress.cs" />
+    <Compile Include="WorkFlow\IWorkflowBaseMassInventoryMovement.cs" />
+    <Compile Include="WorkFlow\IWorkflowEmail.cs" />
+    <Compile Include="WorkFlow\IWorkflowSpreadsheet.cs" />
+    <Compile Include="WorkFlow\IWorkflowMessage.cs" />
+    <Compile Include="WorkFlow\IWorkflowItem.cs" />
+    <Compile Include="WorkFlow\IWorkflowImage.cs" />
+    <Compile Include="WorkFlow\IWorkflowAttachment.cs" />
+    <Compile Include="Lookups\Enum\ClientStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkFlow\IWorkflowTask.cs" />
+    <Compile Include="WorkFlow\IWorkflowNote.cs" />
+    <Compile Include="WorkFlow\IWorkflowSignature.cs" />
+    <Compile Include="WorkFlow\IWorkflowEquipment.cs" />
+    <Compile Include="WorkFlow\IWorkflowTracking.cs" />
+    <Compile Include="WorkFlow\IWorkflow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignyt.Framework\Ignyt.Framework.csproj">
+      <Project>{4f0e9945-b6c5-4762-a3f7-db49f01f9327}</Project>
+      <Name>Ignyt.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

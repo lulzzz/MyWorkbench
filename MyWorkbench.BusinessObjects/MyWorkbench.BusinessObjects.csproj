@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1324A411-390D-4BDC-A4AE-192451827C3D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyWorkbench.BusinessObjects</RootNamespace>
+    <AssemblyName>MyWorkbench.BusinessObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Web.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.3.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Nager.Date, Version=1.25.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nager.Date.1.25.7\lib\net461\Nager.Date.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.112.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.112.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.112.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.112.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xero.Api, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xero.API.SDK.2.2.8\lib\net40\Xero.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="Xero.Api.Example.Applications, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xero.API.SDK.2.2.8\lib\net40\Xero.Api.Example.Applications.dll</HintPath>
+    </Reference>
+    <Reference Include="Xero.Api.Example.TokenStores, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xero.API.SDK.2.2.8\lib\net40\Xero.Api.Example.TokenStores.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\BankingAccount.cs" />
+    <Compile Include="Accounts\Banking.cs" />
+    <Compile Include="Accounts\AccountingExport.cs" />
+    <Compile Include="Accounts\SupplierCreditNote.cs" />
+    <Compile Include="Accounts\MultiplePayment.cs" />
+    <Compile Include="Accounts\SupplierInvoice.cs" />
+    <Compile Include="Accounts\RecurringInvoice.cs" />
+    <Compile Include="Accounts\Sale.cs" />
+    <Compile Include="Helpers\WorkFlowExecute.cs" />
+    <Compile Include="Lookups\Account.cs" />
+    <Compile Include="BaseObjects\WorkFlowChecklist.cs" />
+    <Compile Include="BaseObjects\WorkFlowChecklistItem.cs" />
+    <Compile Include="BaseObjects\WorkflowSpreadsheet.cs" />
+    <Compile Include="BaseObjects\WorkFlowTime.cs" />
+    <Compile Include="BaseObjects\WorkFlowTimeTrackingMultipleItem.cs" />
+    <Compile Include="BaseObjects\WorkFlowTimeTrackingMultiple.cs" />
+    <Compile Include="BaseObjects\WorkFlowTimeTracking.cs" />
+    <Compile Include="BaseObjects\WorkFlowTask.cs" />
+    <Compile Include="BaseObjects\WorkFlowPayment.cs" />
+    <Compile Include="Accounts\Transaction.cs" />
+    <Compile Include="BaseObjects\AttachmentBase.cs" />
+    <Compile Include="BaseObjects\WorkCalendarEvent.cs" />
+    <Compile Include="BaseObjects\WorkFlowAttachment.cs" />
+    <Compile Include="BaseObjects\WorkflowBase.cs" />
+    <Compile Include="BaseObjects\WorkflowBaseMassInventoryMovement.cs" />
+    <Compile Include="BaseObjects\WorkFlowEquipment.cs" />
+    <Compile Include="BaseObjects\WorkFlowImage.cs" />
+    <Compile Include="BaseObjects\WorkFlowItem.cs" />
+    <Compile Include="BaseObjects\WorkFlowNote.cs" />
+    <Compile Include="BaseObjects\WorkFlowSignature.cs" />
+    <Compile Include="BaseObjects\WorkflowTracking.cs" />
+    <Compile Include="Common\Checklist.cs" />
+    <Compile Include="Common\CheckListGroup.cs" />
+    <Compile Include="Common\ChecklistItem.cs" />
+    <Compile Include="Communication\WebhooksEvents.cs" />
+    <Compile Include="Communication\CommunicationLog.cs" />
+    <Compile Include="Communication\Common\CellNumber.cs" />
+    <Compile Include="Communication\Common\RecipientRole.cs" />
+    <Compile Include="Communication\EmailAttachment.cs" />
+    <Compile Include="Communication\Common\EmailAddress.cs" />
+    <Compile Include="Communication\Message.cs" />
+    <Compile Include="Communication\Email.cs" />
+    <Compile Include="Geolocation\DeviceInfo.cs" />
+    <Compile Include="Helpers\AccountingPackageExport.cs" />
+    <Compile Include="Helpers\IStatusPriorityHelper.cs" />
+    <Compile Include="Helpers\WorkflowHelper.cs" />
+    <Compile Include="Helpers\RecurringHelper.cs" />
+    <Compile Include="Helpers\MessageHelper.cs" />
+    <Compile Include="Helpers\WebHooksEventsHelper.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\TransactionHelper.cs" />
+    <Compile Include="Helpers\EmployeeHelper.cs" />
+    <Compile Include="Helpers\SageOneAccountingExport.cs" />
+    <Compile Include="Helpers\WorkFlowTimeTrackingMultipleHelper.cs" />
+    <Compile Include="Helpers\MessageInformation.cs" />
+    <Compile Include="Helpers\InventoryTransactionHelper.cs" />
+    <Compile Include="Helpers\CustomFieldHelper.cs" />
+    <Compile Include="Helpers\EventEntryHelper.cs" />
+    <Compile Include="Helpers\IPhysicalAddressHelper.cs" />
+    <Compile Include="Helpers\IWorkflowHelper.cs" />
+    <Compile Include="Helpers\MassInventoryMovementItemHelper.cs" />
+    <Compile Include="Helpers\IWorkflowItemHelper.cs" />
+    <Compile Include="Helpers\Notifications\ExportHelperBase.cs" />
+    <Compile Include="Helpers\Notifications\MultiTenantHelper.cs" />
+    <Compile Include="Helpers\Notifications\NotificationHelper.cs" />
+    <Compile Include="Helpers\PermissionHelper.cs" />
+    <Compile Include="Helpers\TransactionTypeHelper.cs" />
+    <Compile Include="Helpers\VendorContactHelper.cs" />
+    <Compile Include="Helpers\VendorHelper.cs" />
+    <Compile Include="Helpers\XeroAccountingExport.cs" />
+    <Compile Include="Office\Document.cs" />
+    <Compile Include="Office\Spreadsheet.cs" />
+    <Compile Include="RecurringBooking.cs" />
+    <Compile Include="RecurringTask.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="Booking.cs" />
+    <Compile Include="Lookups\AccountCategory.cs" />
+    <Compile Include="BaseObjects\WorkFlowTerm.cs" />
+    <Compile Include="Lookups\VATType.cs" />
+    <Compile Include="RecurringJobCard.cs" />
+    <Compile Include="Lookups\EmployeeRate.cs" />
+    <Compile Include="Lookups\WorkflowResource.cs" />
+    <Compile Include="RuleRequiredFieldPersistent.cs" />
+    <Compile Include="Common\Currency.cs" />
+    <Compile Include="Common\TimeZone.cs" />
+    <Compile Include="Communication\Template.cs" />
+    <Compile Include="DomainComponent\TeamEmployeeDisplay.cs" />
+    <Compile Include="Dynamic\CustomField.cs" />
+    <Compile Include="Dynamic\DynamicDictionaries.cs" />
+    <Compile Include="FileAttachment.cs" />
+    <Compile Include="Inventory\Equipment.cs" />
+    <Compile Include="Inventory\InventoryTransaction.cs" />
+    <Compile Include="Inventory\Item.cs" />
+    <Compile Include="Inventory\ItemCategory.cs" />
+    <Compile Include="Inventory\MassInventoryMovement.cs" />
+    <Compile Include="Inventory\MassInventoryMovementItem.cs" />
+    <Compile Include="Lookups\ContactType.cs" />
+    <Compile Include="Lookups\EquipmentType.cs" />
+    <Compile Include="Lookups\FaultType.cs" />
+    <Compile Include="Lookups\InventoryLocation.cs" />
+    <Compile Include="Lookups\Make.cs" />
+    <Compile Include="Lookups\TeamType.cs" />
+    <Compile Include="Lookups\Employee.cs" />
+    <Compile Include="Lookups\EmployeeRole.cs" />
+    <Compile Include="Lookups\Label.cs" />
+    <Compile Include="Lookups\Status.cs" />
+    <Compile Include="Lookups\Team.cs" />
+    <Compile Include="Lookups\WorkflowType.cs" />
+    <Compile Include="Project.cs" />
+    <Compile Include="Lookups\Location.cs" />
+    <Compile Include="Lookups\PhysicalAddress.cs" />
+    <Compile Include="Constants\Constants.cs" />
+    <Compile Include="Lookups\VendorContact.cs" />
+    <Compile Include="Lookups\Source.cs" />
+    <Compile Include="Inventory\Purchase.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Ticket.cs" />
+    <Compile Include="Inventory\RequestForQuote.cs" />
+    <Compile Include="Accounts\CreditNote.cs" />
+    <Compile Include="Accounts\Invoice.cs" />
+    <Compile Include="Accounts\Quote.cs" />
+    <Compile Include="JobCard.cs" />
+    <Compile Include="Lookups\Vendor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CommonUtils.cs" />
+    <Compile Include="WorkFlow\WorkFlowTracking.cs" />
+    <Compile Include="WorkFlow\WorkFlowProcessTracking.cs" />
+    <Compile Include="WorkFlow\WorkFlowProcess.cs" />
+    <Compile Include="WorkFlow\WorkFlow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignyt.Framework.ExpressApp\Ignyt.Framework.ExpressApp.csproj">
+      <Project>{0df62b91-3857-4168-9f15-511793a21e72}</Project>
+      <Name>Ignyt.Framework.ExpressApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.BusinessInterface\Ignyt.BusinessInterface.csproj">
+      <Project>{8e0e2a83-5e0c-491e-98cd-2db4b6e6863e}</Project>
+      <Name>Ignyt.BusinessInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Framework.Api\Ignyt.Framework.Api.csproj">
+      <Project>{6d915e37-74a7-442f-82b4-fa8368850cc4}</Project>
+      <Name>Ignyt.Framework.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Framework\Ignyt.Framework.csproj">
+      <Project>{4f0e9945-b6c5-4762-a3f7-db49f01f9327}</Project>
+      <Name>Ignyt.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Webfunctions\Ignyt.Webfunctions.csproj">
+      <Project>{be1d28c3-865b-4746-be28-97d2cee2d1bc}</Project>
+      <Name>Ignyt.Webfunctions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.3.0\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.3.0\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.3.0\build\EntityFramework.targets')" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.112.0\build\net46\System.Data.SQLite.Core.targets')" />
+</Project>

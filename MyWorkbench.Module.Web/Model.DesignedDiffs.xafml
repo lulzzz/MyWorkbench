@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="CloneObject" ImageName="Action_Copy" />
+      <Action Id="EmailAction" ImageName="Action_Export" />
+      <Action Id="NavigateTo" ImageName="Actions_AddCircled" PaintStyle="Image" />
+      <Action Id="New" ImageName="Action_New" PaintStyle="Image" />
+      <Action Id="ShowInReportV2" PaintStyle="Image" ImageName="Navigation_Item_ViewVariant" />
+    </Actions>
+  </ActionDesign>
+  <NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List" GenerateRelatedReportsGroup="False" ShowNavigationOnStart="True" GenerateRelatedAnalysisGroup="False" StartupNavigationItem="Ticket_ListView">
+    <Items>
+      <Item Id="Work Flow">
+        <Items>
+          <Item Id="JobCard_ListView">
+            <Items>
+              <Item Id="Kanban" Caption="Kanban" ViewId="JobCard_ListView_Kanban" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="RecurringBooking_ListView" Removed="True" />
+          <Item Id="RecurringTask_ListView" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options CollectionsEditMode="Edit" DataAccessMode="Server" SaveListViewStateInCookies="True" HideNavigationOnStartup="True" OptimisticLockingReadBehavior="ReloadObject" TrackPropertiesModifications="True">
+    <Dashboards EnableCreation="True" />
+    <LayoutManagerOptions CaptionColon=":" EnableCaptionColon="False" CaptionWordWrap="NoWrap" CaptionLocation="Left" />
+    <PopupWindowOptions WindowWidth="1024" WindowHeight="768" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="AdditionalViewControlsModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="CloneObjectModule" Version="19.2.1.0" IsNewNode="True" />
+    <SchemaModule Name="EmailModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="ExcelImporterModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="ExcelImporterWebModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="ImportWizardModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="JobSchedulerJobsModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="JobSchedulerModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="LogicModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="SchedulerAspNetModule" Version="19.2.1.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerModuleBase" Version="19.2.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemAspNetModule" Version="19.2.1.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.2.1.0" IsNewNode="True" />
+    <SchemaModule Name="XpandAuditTrailModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandFileAttachmentsModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandFileAttachmentsWebModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandHtmlPropertyEditorAspNetModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandSchedulerAspNetModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandSchedulerModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandSecurityModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandSecurityWebModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandSystemAspNetModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandSystemModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandTreeListEditorsAspNetModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandTreeListEditorsModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandValidationModule" Version="18.1.3.3" IsNewNode="True" />
+    <SchemaModule Name="XpandValidationWebModule" Version="18.1.3.3" IsNewNode="True" />
+  </SchemaModules>
+  <ViewItems>
+    <PropertyEditor Name="PropertyEditors">
+      <RegisteredPropertyEditor PropertyType="LookupProperty" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridLookupPropertyEditor" />
+      <RegisteredPropertyEditor PropertyType="System.String" EditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxStringPropertyEditor" />
+    </PropertyEditor>
+  </ViewItems>
+  <Views>
+    <ListView Id="Account_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="AccountCategory_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="AuditedObjectWeakReference_AuditDataItems_ListView" OpenDetailViewAsPopup="True" />
+    <ListView Id="Banking_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="CreditNote_ListView" AllowEdit="False" InlineEditMode="Inline" NewItemRowPosition="None" />
+    <ListView Id="CustomField_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="Employee_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="Equipment_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="DateManufactured" Index="-1" />
+        <ColumnInfo Id="Vendor" Index="-1" />
+        <ColumnInfo Id="EquipmentType" Index="0" SortOrder="Ascending" GroupIndex="0" />
+        <ColumnInfo Id="Image" Index="1" />
+        <ColumnInfo Id="Location" Index="2" />
+        <ColumnInfo Id="Make" Index="3" />
+        <ColumnInfo Id="SerialNumber" Index="4" />
+        <ColumnInfo Id="Warranty" Index="5" />
+        <ColumnInfo Id="DatePurchased" Index="6" />
+        <ColumnInfo Id="Accessories" Removed="True" />
+        <ColumnInfo Id="HoursBetweenServices" Removed="True" />
+        <ColumnInfo Id="LastServiceDate" Removed="True" />
+        <ColumnInfo Id="Model" Removed="True" />
+        <ColumnInfo Id="NextServiceDate" Removed="True" />
+        <ColumnInfo Id="Oid" Removed="True" />
+        <ColumnInfo Id="RunningDaysPerWeek" Removed="True" />
+        <ColumnInfo Id="RunningHoursPerDay" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="InventoryLocation_ListView" AllowEdit="True" NewItemRowPosition="Top" InlineEditMode="Batch" />
+    <ListView Id="InventoryTransaction_ListView" AllowEdit="True" NewItemRowPosition="Top" InlineEditMode="Batch" />
+    <ListView Id="Invoice_ListView" InlineEditMode="Inline" AllowEdit="False" NewItemRowPosition="None" />
+    <ListView Id="Item_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" IsAdaptive="True">
+      <Columns>
+        <ColumnInfo Id="Image" Index="6" />
+        <ColumnInfo Id="Category" Index="7" SortOrder="Ascending" GroupIndex="0" />
+        <ColumnInfo Id="Created" Removed="True" />
+        <ColumnInfo Id="DefaultQuantity" Removed="True" />
+        <ColumnInfo Id="ExternalStockCode" Removed="True" />
+        <ColumnInfo Id="FullDescription" Removed="True" />
+        <ColumnInfo Id="IsParent" Removed="True" />
+        <ColumnInfo Id="ItemType" Removed="True" />
+        <ColumnInfo Id="Oid" Removed="True" />
+        <ColumnInfo Id="PriceLastAdjusted" Removed="True" />
+        <ColumnInfo Id="VatPercentage" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="JobCard_DetailView">
+      <Items>
+        <PropertyEditor Id="BookedTime" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxDateTimePropertyEditor" />
+        <PropertyEditor Id="BookedTimeEnd" PropertyEditorType="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxDateTimePropertyEditor" />
+      </Items>
+    </DetailView>
+    <ListView Id="JobCard_ListView_Kanban" ClassName="MyWorkbench.BusinessObjects.JobCard" EditorTypeName="MyWorkbench.Module.Web.Editors.ASPxKanbanListEditor" DataAccessMode="Client" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="No" PropertyName="No" Index="0" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="Vendor" PropertyName="Vendor" Index="1" Width="70" Caption="Client" IsNewNode="True" />
+        <ColumnInfo Id="Location" PropertyName="Location" Index="2" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="Type" PropertyName="Type" Index="3" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="Issued" PropertyName="Issued" Index="4" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="ReferenceNumber" PropertyName="ReferenceNumber" Width="70" Index="5" IsNewNode="True" />
+        <ColumnInfo Id="Priority" PropertyName="Priority" Index="6" IsNewNode="True" />
+        <ColumnInfo Id="Status" PropertyName="Status" Index="7" IsNewNode="True" />
+        <ColumnInfo Id="BookedTime" PropertyName="BookedTime" Index="8" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="TotalIncl" PropertyName="TotalIncl" Index="9" Width="50" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="MassInventoryMovement_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <DetailView Id="NotificationsObject_DetailView">
+      <Items>
+        <ActionContainerViewItem Id="ActionGroup" Caption="ActionGroup(16)" />
+        <PropertyEditor Id="Postpone" Caption="Snooze" MaxLength="100" />
+        <ActionContainerViewItem Id="RefreshNotifications" Caption="RefreshNotifications(3)" />
+        <PropertyEditor Id="ShowNotificationsWindow" Caption="Show" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="LayoutGroupPostpone" ShowCaption="False" Index="0" RelativeSize="8.2840236686390529">
+          <LayoutGroup Id="NotificationsStateGroup" ShowCaption="False" Index="0" RelativeSize="100">
+            <LayoutItem Id="RefreshNotifications" Index="0" RelativeSize="42.610364683301341" />
+            <LayoutItem Id="NotificationsState" MinSize="1, 1" MaxSize="260, 0" Index="1" RelativeSize="57.389635316698659" />
+          </LayoutGroup>
+        </LayoutGroup>
+        <LayoutGroup Id="MasterGroup" Index="1" RelativeSize="91.715976331360949">
+          <LayoutGroup Id="Main" RelativeSize="86.021505376344081">
+            <LayoutItem Id="Notifications" Index="0" RelativeSize="100" />
+          </LayoutGroup>
+          <LayoutGroup Id="LayoutGroupActions" Index="1" RelativeSize="13.978494623655914">
+            <LayoutGroup Id="WrapperNotifications" Direction="Horizontal" Index="0" RelativeSize="55.384615384615387">
+              <LayoutItem Id="Postpone" CustomCSSClassName="postponeItem" ViewItem="Postpone" Index="0" RelativeSize="56.813819577735124" IsNewNode="True" />
+              <LayoutItem Id="ShowNotificationsWindow" CustomCSSClassName="showNotificationsWindowItem" ViewItem="ShowNotificationsWindow" SizeConstraintsType="Custom" MinSize="225, 1" MaxSize="225, 0" Index="1" RelativeSize="43.186180422264876" IsNewNode="True" Removed="True" />
+            </LayoutGroup>
+            <LayoutItem Id="ActionGroup" CustomCSSClassName="actionGroup" ViewItem="ActionGroup" Index="1" RelativeSize="43.07692307692308" IsNewNode="True" />
+            <LayoutItem Id="EmptyItem6" SizeConstraintsType="Custom" MinSize="1, 32" MaxSize="0, 32" Index="1" RelativeSize="28.828828828828829" Removed="True" />
+            <LayoutGroup Id="LayoutGroupActions2" Caption="LayoutGroupActions2(12)" Direction="Vertical" Index="2" RelativeSize="1.5384615384615386">
+              <LayoutGroup Id="ActionGroup" Index="0" RelativeSize="100">
+                <LayoutItem Id="EmptyItem9" MinSize="1, 1" MaxSize="0, 1" Index="0" RelativeSize="100" />
+                <LayoutItem Id="ActionGroup" Index="1" RelativeSize="97.297297297297291" Removed="True" />
+              </LayoutGroup>
+              <LayoutItem Id="Postpone" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="NotificationsObject_Notifications_ListView" OpenDetailViewAsPopup="True">
+      <Columns>
+        <ColumnInfo Id="State" Index="2" />
+        <ColumnInfo Id="ID" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="Party_PhoneNumbers_ListView" OpenDetailViewAsPopup="True" />
+    <ListView Id="PermissionPolicyRoleBase_NavigationPermissions_ListView" OpenDetailViewAsPopup="True" />
+    <ListView Id="PermissionPolicyRoleBase_TypePermissions_ListView" OpenDetailViewAsPopup="True" />
+    <ListView Id="PermissionPolicyTypePermissionObject_ListView" OpenDetailViewAsPopup="True" />
+    <ListView Id="PermissionPolicyTypePermissionObject_MemberPermissions_ListView" OpenDetailViewAsPopup="True" />
+    <ListView Id="PermissionPolicyTypePermissionObject_ObjectPermissions_ListView" OpenDetailViewAsPopup="True" />
+    <DetailView Id="Purchase_DetailView">
+      <Items>
+        <PropertyEditor Id="Vendor" View="Vendor_Supplier_LookupListView" />
+      </Items>
+    </DetailView>
+    <ListView Id="Status_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="WorkFlowType" Index="0" SortIndex="-1" SortOrder="Ascending" GroupIndex="0" />
+        <ColumnInfo Id="Description" Index="1" SortIndex="-1" SortOrder="None" />
+        <ColumnInfo Id="Color" Index="2" />
+        <ColumnInfo Id="IsCompleted" Index="3" />
+        <ColumnInfo Id="IsDefault" Index="4" />
+      </Columns>
+    </ListView>
+    <DetailView Id="SupplierInvoice_DetailView">
+      <Items>
+        <PropertyEditor Id="Vendor" View="Vendor_Supplier_LookupListView" />
+      </Items>
+    </DetailView>
+    <ListView Id="Team_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <DetailView Id="Ticket_DetailView">
+      <Items>
+        <PropertyEditor Id="Vendor" View="Vendor_All_LookupListView" />
+      </Items>
+    </DetailView>
+    <ListView Id="VATType_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="Vendor_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="VendorContact_ListView" AllowEdit="True" NewItemRowPosition="Top" InlineEditMode="Batch" />
+    <ListView Id="WorkCalendarEvent_LookupListView" EditorTypeName="DevExpress.ExpressApp.Web.Editors.ASPx.ASPxGridListEditor" />
+    <ListView Id="WorkflowBase_Items_Cost_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="WorkflowBase_Items_Light_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="WorkflowBase_Items_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="WorkflowBase_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+    <ListView Id="WorkflowBase_WorkFlowTimeTracking_ListView" AllowEdit="True" InlineEditMode="Batch" NewItemRowPosition="Top" />
+  </Views>
+</Application>

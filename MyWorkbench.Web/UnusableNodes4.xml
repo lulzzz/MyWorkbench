@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Inventory" Index="5" Removed="True">
+        <Items Id="Items">
+          <Item Id="Equipment_ListView" Removed="True" />
+          <Item Id="Inventory" Removed="True" />
+          <Item Id="Item_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="People" Index="7" Removed="True">
+        <Items Id="Items">
+          <Item Id="Employee_ListView" Removed="True" />
+          <Item Id="EmployeeRole_ListView" Removed="True" />
+          <Item Id="MyDetails" Removed="True" />
+          <Item Id="Team_ListView" Removed="True" />
+          <Item Id="Vendor_ListView" Removed="True" />
+          <Item Id="VendorContact_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="KPI" Removed="True" />
+      <Item Id="Office" Removed="True" />
+      <Item Id="Reports" Removed="True">
+        <Items Id="Items">
+          <Item Id="Dashboards" Removed="True" />
+          <Item Id="ReportsV2" Removed="True" />
+          <Item Id="RichTextMailMergeData_ListView" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="State Machine" Removed="True" />
+    </Items>
+  </NavigationItems>
+</Application>

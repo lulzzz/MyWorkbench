@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="JobCard_ListView">
+      <Variants Id="Variants">
+        <Variant Id="Kanban" Caption="Kanban" ViewID="JobCard_Kanban_ListView" />
+      </Variants>
+    </ListView>
+    <ListView Id="Task_ListView">
+      <Variants Id="Variants">
+        <Variant Id="Kanban" ViewID="Task_Kanban_ListView" Caption="Kanban" />
+      </Variants>
+    </ListView>
+  </Views>
+</Application>

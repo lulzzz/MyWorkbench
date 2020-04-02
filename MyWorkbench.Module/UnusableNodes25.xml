@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="CreditNote_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Invoice_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Quote_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="WorkflowBase_Employee_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Workflow" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="WorkflowSpreadsheet_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Workflow" Removed="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

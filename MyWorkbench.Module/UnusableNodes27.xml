@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="CreditNote_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Document_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Text_Group" Caption="Document" Direction="Horizontal" RelativeSize="88.257575757575751" Removed="True">
+            <LayoutItem Id="Text" RelativeSize="100" ShowCaption="False" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Invoice_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Quote_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="WorkflowBase">
+              <LayoutGroup Id="WorkflowBase_col1">
+                <LayoutItem Id="TeamEmployees" ViewItem="TeamEmployees" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Spreadsheet_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Text_Group" Caption="Spreadsheet" Direction="Horizontal" RelativeSize="88.257575757575751" Removed="True">
+            <LayoutItem Id="Text" RelativeSize="100" ShowCaption="False" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

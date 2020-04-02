@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2306B551-4D7C-4506-888B-6E067641DF43}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntelliServe.Service.Api</RootNamespace>
+    <AssemblyName>IntelliServe.Service.Api</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Persistent.Base.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v16.1, Version=16.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomatedComms.cs" />
+    <Compile Include="CalendarSync.cs" />
+    <Compile Include="IntelliServeAutomatedCommsObjects.cs" />
+    <Compile Include="IntelliServeCalendarSyncObjects.cs" />
+    <Compile Include="IntelliServePipeDriveComms.cs" />
+    <Compile Include="IntelliServeTicketsFromEmail.cs" />
+    <Compile Include="RecurringItems.cs" />
+    <Compile Include="IntelliServeRecurringObjects.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DiGG-IT Framework\Diggit Framework\Diggit.Framework.csproj">
+      <Project>{d9f3d767-a08f-43a9-aee6-273125ad0bb5}</Project>
+      <Name>Diggit.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DiGG-IT Framework\Diggit.Framework.Api\Diggit.Framework.Api.csproj">
+      <Project>{e1788116-1594-4db4-80d3-deb41dbd182e}</Project>
+      <Name>Diggit.Framework.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DiGG-IT Framework\Diggit.Framework.DevExpress\Diggit.Framework.DevExpress.csproj">
+      <Project>{04947a10-6817-4049-8cf9-9b9070178351}</Project>
+      <Name>Diggit.Framework.DevExpress</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DiGG-IT Framework\Diggit.Framework.ExpressApp\Diggit.Framework.ExpressApp.csproj">
+      <Project>{0c2cda7c-fe9b-414f-85f5-69872f1906b6}</Project>
+      <Name>Diggit.Framework.ExpressApp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DiGG-IT Framework\Diggit.Framework.MailSystem\Diggit.Framework.MailSystem.csproj">
+      <Project>{f5742f9f-4dc4-45ed-b134-c0de3f3593e5}</Project>
+      <Name>Diggit.Framework.MailSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DiGG-IT Framework\PipedriveNet\PipedriveNet.csproj">
+      <Project>{070857d4-9c6e-4fd0-8ca9-5f3ee810376f}</Project>
+      <Name>PipedriveNet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IntelliServe.Module.BusinessObjects\IntelliServe.Module.BusinessObjects.csproj">
+      <Project>{d1756b6c-3ccc-49be-9046-94b06390629a}</Project>
+      <Name>IntelliServe.Module.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IntelliServe.Module.BusinessReports\IntelliServe.Module.BusinessReports.csproj">
+      <Project>{6932f867-f6ce-4092-a894-4ec7b3bcc037}</Project>
+      <Name>IntelliServe.Module.BusinessReports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

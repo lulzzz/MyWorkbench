@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.CookiePolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OData" Version="7.2.0" />
+    <PackageReference Include="Microsoft.OData.Core" Version="7.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignyt.Framework.Authentication\Ignyt.Framework.Authentication.csproj" />
+    <ProjectReference Include="..\MyWorkbench.BusinessObjects\MyWorkbench.BusinessObjects.csproj" />
+    <ProjectReference Include="..\MyWorkbench.ExpressApp.Authentication\MyWorkbench.ExpressApp.Authentication.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v19.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.v19.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v19.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v19.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v19.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v19.2">
+      
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v19.2">
+      
+    </Reference>
+  </ItemGroup>
+  <ProjectExtensions><VisualStudio><UserProperties TemplateFeatures="NETCORE CS BASELINE NETCORE_ON_FX" /></VisualStudio></ProjectExtensions>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="dotnet restore" ConsoleToMSBuild="true" ContinueOnError="false" IgnoreStandardErrorWarningFormat="true" LogStandardErrorAsError="false" IgnoreExitCode="true">
+      <Output PropertyName="RestoreResult" TaskParameter="ConsoleOutput" />
+    </Exec>
+    <Error Condition="$(RestoreResult.Contains('DevExpress'))" ContinueOnError="false" Text="The DevExpress packages were not restored. Make sure you've configured your NuGet feed: https://nuget.devexpress.com/ " />
+  </Target>
+</Project>

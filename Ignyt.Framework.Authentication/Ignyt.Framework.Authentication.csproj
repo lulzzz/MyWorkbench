@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43046ADC-9EF3-4A8A-917C-9334B9F17097}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ignyt.Framework.Authentication</RootNamespace>
+    <AssemblyName>Ignyt.Framework.Authentication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuthenticationContext.cs" />
+    <Compile Include="AuthenticationState.cs" />
+    <Compile Include="AuthenticationStateAuthenticated.cs" />
+    <Compile Include="AuthenticationStateAuthenticationObject.cs" />
+    <Compile Include="AuthenticationStateChangeAuthenticationObject.cs" />
+    <Compile Include="AuthenticationStateCompleted.cs" />
+    <Compile Include="AuthenticationStateConstants.cs" />
+    <Compile Include="AuthenticationStateExternal.cs" />
+    <Compile Include="AuthenticationStateFailed.cs" />
+    <Compile Include="AuthenticationStateSuccessfull.cs" />
+    <Compile Include="AuthenticationStateTrialExpired.cs" />
+    <Compile Include="AuthenticationStateUserName.cs" />
+    <Compile Include="AuthenticationStateUserUpdate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ignyt.Framework.Api\Ignyt.Framework.Api.csproj">
+      <Project>{6d915e37-74a7-442f-82b4-fa8368850cc4}</Project>
+      <Name>Ignyt.Framework.Api</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ignyt.Framework\Ignyt.Framework.csproj">
+      <Project>{4f0e9945-b6c5-4762-a3f7-db49f01f9327}</Project>
+      <Name>Ignyt.Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

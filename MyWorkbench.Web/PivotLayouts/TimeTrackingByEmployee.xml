@@ -1,0 +1,373 @@
+﻿<XtraSerializer version="1.0" application="PivotGrid">
+  <property name="#LayoutVersion" />
+  <property name="#LayoutScaleFactor">@1,Width=1@1,Height=1</property>
+  <property name="Fields" iskey="true" value="12">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_CurrentRate</property>
+      <property name="FieldName">CurrentRate</property>
+      <property name="Index">0</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">2</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_NumberOfHours</property>
+      <property name="FieldName">NumberOfHours</property>
+      <property name="Index">1</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">3</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_NumberOfTotalHours</property>
+      <property name="FieldName">NumberOfTotalHours</property>
+      <property name="Index">2</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">4</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item4" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_TotalPay</property>
+      <property name="Area">DataArea</property>
+      <property name="FieldName">TotalPay</property>
+      <property name="Index">3</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">4</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item5" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_Workflow.FullDescription</property>
+      <property name="Area">RowArea</property>
+      <property name="FieldName">Workflow.FullDescription</property>
+      <property name="Index">4</property>
+      <property name="SummaryType">Count</property>
+      <property name="AreaIndex">1</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item6" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_StartDateTime</property>
+      <property name="GroupInterval">Date</property>
+      <property name="FieldName">StartDateTime</property>
+      <property name="UnboundFieldName">Field_StartDateTime</property>
+      <property name="Index">5</property>
+      <property name="SummaryType">Count</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:g}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:g}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:g}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">0</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item7" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_EndDateTime</property>
+      <property name="GroupInterval">Date</property>
+      <property name="FieldName">EndDateTime</property>
+      <property name="UnboundFieldName">Field_EndDateTime</property>
+      <property name="Index">6</property>
+      <property name="SummaryType">Count</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:g}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:g}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:g}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">1</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item8" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_Employee.FullName</property>
+      <property name="Area">RowArea</property>
+      <property name="FieldName">Employee.FullName</property>
+      <property name="Index">7</property>
+      <property name="SummaryType">Count</property>
+      <property name="AreaIndex">0</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">316</property>
+    </property>
+    <property name="Item9" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_NormalHours</property>
+      <property name="Area">DataArea</property>
+      <property name="FieldName">NormalHours</property>
+      <property name="Index">8</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">1</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item10" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_NumberOfLunch</property>
+      <property name="Area">DataArea</property>
+      <property name="FieldName">NumberOfLunch</property>
+      <property name="Index">9</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">0</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item11" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_NumberOfOverTimeHours</property>
+      <property name="Area">DataArea</property>
+      <property name="FieldName">NumberOfOverTimeHours</property>
+      <property name="Index">10</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">2</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+    <property name="Item12" isnull="true" iskey="true">
+      <property name="Options" isnull="true" iskey="true">
+        <property name="AllowRunTimeSummaryChange">true</property>
+      </property>
+      <property name="ImageIndex">-1</property>
+      <property name="ToolTips" isnull="true" iskey="true">
+        <property name="HeaderText" />
+        <property name="ValueText" />
+      </property>
+      <property name="FieldEditName" />
+      <property name="Name">Field_NumberOfDoubleTimeHours</property>
+      <property name="Area">DataArea</property>
+      <property name="FieldName">NumberOfDoubleTimeHours</property>
+      <property name="Index">11</property>
+      <property name="CellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="GrandTotalCellFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="ValueFormat" isnull="true" iskey="true">
+        <property name="FormatString">{0:N2}</property>
+        <property name="FormatType">Custom</property>
+      </property>
+      <property name="AreaIndex">3</property>
+      <property name="MinWidth">20</property>
+      <property name="Width">100</property>
+    </property>
+  </property>
+  <property name="Prefilter" isnull="true" iskey="true">
+    <property name="Criteria" isnull="true" />
+    <property name="ShowOperandTypeIcon">false</property>
+    <property name="Enabled">false</property>
+  </property>
+  <property name="DefaultFilterEditorView">Visual</property>
+  <property name="ShowCustomFunctions">Default</property>
+  <property name="OptionsChartDataSource" isnull="true" iskey="true">
+    <property name="ProvideColumnGrandTotals">true</property>
+    <property name="ProvideRowGrandTotals">true</property>
+    <property name="ProvideColumnTotals">true</property>
+    <property name="ProvideRowTotals">true</property>
+    <property name="DataProvideMode">UseCustomSettings</property>
+  </property>
+  <property name="Groups" iskey="true" value="2">
+    <property name="Item1" isnull="true" iskey="true">
+      <property name="Fields" iskey="true" value="1">
+        <property name="Item1">Field_Employee.FullName</property>
+      </property>
+      <property name="Caption">Employee</property>
+    </property>
+    <property name="Item2" isnull="true" iskey="true">
+      <property name="Fields" iskey="true" value="1">
+        <property name="Item1">Field_Workflow.FullDescription</property>
+      </property>
+      <property name="Caption">Workflow</property>
+    </property>
+  </property>
+</XtraSerializer>
